@@ -1,135 +1,135 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/open-book.png" type="image/x-icon" />
 
-		<!-- DaisUI and Tailwind -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/daisyui@3.6.1/dist/full.css"
-			rel="stylesheet"
-			type="text/css"
-		/>
-		<script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisUI and Tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-		<!-- Font-Awesome -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
 
-		<title>Code Setup</title>
-	</head>
-	<body>
-		<!-- Header -->
-		<div class="navbar bg-base-100">
-			<div class="flex-1">
-				<a class="btn btn-ghost normal-case text-xl italic"
-					><i class="fa-solid fa-book-open"></i>Library</a
-				>
-			</div>
-			<div class="flex-none gap-2">
-				<div class="form-control">
-					<input
-						type="text"
-						placeholder="Search"
-						class="input input-bordered w-24 md:w-auto"
-					/>
-				</div>
-				<div>
-					<button class="btn btn-success text-white">Login</button>
-				</div>
-			</div>
-		</div>
+    <!-- Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-		<!-- Main -->
-		<main>
-			<!-- Books -->
-			<div class="flex gap-5">
-				<!-- Book - 1 -->
-				<div class="border-2 flex p-2">
-					<div class="w-72 mr-5">
-						<img
-							src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1690708107i/181693890.jpg"
-							alt=""
-						/>
-					</div>
-					<div class="flex flex-col gap-2">
-						<h2 class="font-semibold text-2xl">
-							Belle's Ruin
-							<span class="text-gray-400"
-								>(Belle Machado #1)</span
-							>
-						</h2>
-						<h3 class="font-semibold">by Joseph McRae Palmer</h3>
-						<p class="text-gray-400">Release date: Jul 21, 2023</p>
-						<p>
-							We're giving away 100 kindle copies of Joseph McRae
-							Palmer's debut novel, Belle's Ruin!
-							<a href="#" class="text-green-500 text-xl"
-								>...more</a
-							>
-						</p>
-					</div>
-				</div>
-				<!-- Book - 2 -->
-				<div class="border-2 flex p-2">
-					<div class="w-72 mr-5">
-						<img
-							src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1690708107i/181693890.jpg"
-							alt=""
-						/>
-					</div>
-					<div class="flex flex-col gap-2">
-						<h2 class="font-semibold text-2xl">
-							Belle's Ruin
-							<span class="text-gray-400"
-								>(Belle Machado #1)</span
-							>
-						</h2>
-						<h3 class="font-semibold">by Joseph McRae Palmer</h3>
-						<p class="text-gray-400">Release date: Jul 21, 2023</p>
-						<p>
-							We're giving away 100 kindle copies of Joseph McRae
-							Palmer's debut novel, Belle's Ruin!
-							<a href="#" class="text-green-500 text-xl"
-								>...more</a
-							>
-						</p>
-					</div>
-				</div>
-				<!-- Book - 3 -->
-				<div class="border-2 flex p-2">
-					<div class="w-72 mr-5">
-						<img
-							src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1690708107i/181693890.jpg"
-							alt=""
-						/>
-					</div>
-					<div class="flex flex-col gap-2">
-						<h2 class="font-semibold text-2xl">
-							Belle's Ruin
-							<span class="text-gray-400"
-								>(Belle Machado #1)</span
-							>
-						</h2>
-						<h3 class="font-semibold">by Joseph McRae Palmer</h3>
-						<p class="text-gray-400">Release date: Jul 21, 2023</p>
-						<p>
-							We're giving away 100 kindle copies of Joseph McRae
-							Palmer's debut novel, Belle's Ruin!
-							<a href="#" class="text-green-500 text-xl"
-								>...more</a
-							>
-						</p>
-					</div>
-				</div>
-			</div>
-		</main>
-		<script src="./script.js"></script>
-	</body>
+    <title>TOP - Library Project</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="navbar bg-base-100 mb-7 flex flex-col lg:flex-row gap-3 mt-4">
+      <div class="flex-1">
+        <a class="btn btn-ghost normal-case text-3xl italic"
+          ><i class="fa-solid fa-book-open"></i>Library</a
+        >
+      </div>
+      <div class="flex-none gap-3">
+        <div class="form-control">
+          <input
+            type="text"
+            placeholder="Search Books."
+            class="input input-bordered md:w-auto w-full"
+          />
+        </div>
+        <div>
+          <button class="btn btn-neutral" onclick="addBook.showModal()">
+            <i class="fa-solid fa-plus"></i>Add Book
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <main>
+      <!-- Books -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-5 gap-5"
+        id="book-container"
+      >
+        <!-- Book - 1 -->
+        <!-- <div class="border-2 border-gray-50 flex p-2">
+          <div class="mr-5 max-w-[125px]">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1690708107i/181693890.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <h2 class="font-semibold text-xl">
+              Belle's Ruin
+              <span class="text-gray-400">(Belle Machado #1)</span>
+            </h2>
+            <h3 class="font-semibold text-sm">by Joseph McRae Palmer</h3>
+            <p class="text-gray-400 text-sm">Release date: Jul 21, 2023</p>
+            <p class="text-sm">
+              We're giving away 100 kindle copies of Joseph McRae Palmer's debut
+              novel, Belle's Ruin!
+              <a href="#" class="text-green-500">...more</a>
+            </p>
+          </div>
+        </div> -->
+      </div>
+    </main>
+
+    <!-- Add book Modal -->
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="addBook.showModal()">open modal</button> -->
+    <dialog id="addBook" class="modal">
+      <form
+        method="dialog"
+        class="modal-box text-center flex flex-col items-center py-10"
+      >
+        <h1 class="text-2xl mb-5 text-gray-600">Add Book information.</h1>
+        <div class="form-control w-full max-w-xs gap-5">
+          <input
+            type="text"
+            placeholder="Title"
+            class="input input-bordered w-full max-w-xs"
+            id="title"
+          />
+          <input
+            type="text"
+            placeholder="Cover URL"
+            class="input input-bordered w-full max-w-xs"
+            id="cover"
+          />
+          <input
+            type="text"
+            placeholder="Author"
+            class="input input-bordered w-full max-w-xs"
+            id="author"
+          />
+          <input
+            type="text"
+            placeholder="Release date"
+            class="input input-bordered w-full max-w-xs"
+            id="release"
+          />
+          <input
+            type="text"
+            placeholder="Excerpt"
+            class="input input-bordered w-full max-w-xs"
+            id="excerpt"
+          />
+          <button class="btn btn-neutral" id="new-book"><i class="fa-solid fa-plus text-2xl"></i></button>
+        </div>
+      </form>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
+    <script src="./script.js"></script>
+  </body>
 </html>
