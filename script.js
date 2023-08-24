@@ -83,6 +83,31 @@ addBookToLibrary(
 );
 
 // book HTML CARD
+function createCard(title, cover, author, release, excerpt) {
+  const bookElement = `
+  <div class="border-2 border-gray-50 flex p-2">
+    <div class="mr-5 max-w-[125px]">
+      <img
+        src="${cover}"
+        alt=""
+      />
+    </div>
+    <div class="flex flex-col gap-2">
+      <h2 class="font-semibold text-xl">
+        ${title}
+      </h2>
+      <h3 class="font-semibold text-sm">by ${author}</h3>
+      <p class="text-gray-400 text-sm">${release}</p>
+      <p class="text-sm">
+        ${excerpt}
+        <a href="#" class="text-green-500">...more</a>
+      </p>
+    </div>
+  </div>
+  `;
+
+  return bookElement;
+}
 
 // add new book to the array
 newBookAdd.addEventListener("click", () => {
@@ -92,59 +117,29 @@ newBookAdd.addEventListener("click", () => {
   const bookRelease = release.value;
   const bookExcerpt = excerpt.value;
 
-  // addBookToLibrary(bookTitle, bookCover, bookAuthor, bookRelease, bookExcerpt);
-
-  const bookElement = `
-  <div class="border-2 border-gray-50 flex p-2">
-    <div class="mr-5 max-w-[125px]">
-      <img
-        src="${bookCover}"
-        alt=""
-      />
-    </div>
-    <div class="flex flex-col gap-2">
-      <h2 class="font-semibold text-xl">
-        ${bookTitle}
-      </h2>
-      <h3 class="font-semibold text-sm">by ${bookAuthor}</h3>
-      <p class="text-gray-400 text-sm">${bookRelease}</p>
-      <p class="text-sm">
-        ${bookExcerpt}
-        <a href="#" class="text-green-500">...more</a>
-      </p>
-    </div>
-  </div>
-  `;
+  const bookElement = createCard(
+    bookTitle,
+    bookCover,
+    bookAuthor,
+    bookRelease,
+    bookExcerpt
+  );
   const div = document.createElement("div");
   div.innerHTML = bookElement;
 
   bookContainer.prepend(div);
 });
 
-// Get book data from const myLibrary array and render on the dom.
+// Get book data from myLibrary array and render on the dom.
 function renderBooks() {
   myLibrary.forEach((book) => {
-    const bookElement = `
-    <div class="border-2 border-gray-50 flex p-2">
-      <div class="mr-5 max-w-[125px]">
-        <img
-          src="${book.cover}"
-          alt=""
-        />
-      </div>
-      <div class="flex flex-col gap-2">
-        <h2 class="font-semibold text-xl">
-          ${book.title}
-        </h2>
-        <h3 class="font-semibold text-sm">by ${book.author}</h3>
-        <p class="text-gray-400 text-sm">${book.release}</p>
-        <p class="text-sm">
-          ${book.excerpt}
-          <a href="#" class="text-green-500">...more</a>
-        </p>
-      </div>
-    </div>
-    `;
+    const bookElement = createCard(
+      book.title,
+      book.cover,
+      book.author,
+      book.release,
+      book.excerpt
+    );
     const div = document.createElement("div");
     div.innerHTML = bookElement;
 
